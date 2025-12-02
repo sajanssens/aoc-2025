@@ -8,7 +8,7 @@ fun main() {
     var dial = 50
     for (rot in lines(1, Main)) {
         var inc = rot.substring(1).toInt()
-        if (rot[0] == 'L') inc = 100 - inc
+        if (rot[0] == 'L') inc = -inc
         dial = (dial + inc) % 100
         if (dial == 0) password++
     }
